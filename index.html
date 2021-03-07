@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="quiz-app" content="HTML, CSS, JavaScript">
+            <title>Harry Potter Quiz</title>
+            <link href="style.css" rel="stylesheet" type="text/css"/>
+        </head>
+        <body>
+            <header>
+                <h1>Harry Potter Trivia Quiz</h1>
+            </header>
+            <main>
+                <!-- This is the first page for being able to start the quiz and a little info about the quiz will be added-->
+
+                <div class="page-1">
+                    <p>**This is page 1**</p>
+                    <h2>This quiz will test your Harry Potter knowledge</h2>
+                    <button type="button">Click Here To Start!</button>
+                </div>
+
+                <!--This is the second page you'll go to after starting the quiz will be updated with questions from the js file-->
+                
+                <div class="page-2">
+                    <p>**This is page 2**</p>
+                    <p>Question x/5<br>Score: 0/0</p>
+                        <h2>This will be a question</h2>
+                        <form>
+                            <input type="radio" id="A" name="answer" value="A">
+                                <label for="A">A: ${answer}</label><br>
+                            <input type="radio" id="B" name="answer" value="B">
+                                <label for="B">B: ${answer}</label><br>
+                            <input type="radio" id="C" name="answer" value="C">
+                                <label for="C">C: ${answer}</label><br>
+                            <input type="radio" id="C" name="answer" value="D">
+                                <label for="D">D: ${answer}</label><br>
+                        </form>
+                        <div>
+                            <h3>${answerRight/Wrong}The correct answer was ${answer}!</h3>
+                        </div>
+
+                        <div>
+                            <button type="button">Submit</button>
+                            <button type="button">Next >>></button>
+                        </div>
+                    </div>
+
+                    <!--This is the final page for when users finish the quiz, they can choose to retake the quiz if they would like-->
+
+                    <div class="page-3">
+                        <p>**This is page 3**</p>
+                            <h2>You have completed the Harry Potter Trivia Quiz</h2>
+                                <p>You finished the quiz with a score of: x/5</p>
+                            <button type="button">Click Here To Try Again!</button>
+                    </div>
+
+            </main>
+        
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
+            <script src="app.js"></script>
+        </body>
+    </html>
+
+    
